@@ -26,9 +26,17 @@ Abre esa dirección en el iPhone (misma wifi), acepta el aviso de certificado y 
 
 ### Instalar como web app
 
-1. Publica el build (`npm run build` → carpeta `dist/`) en cualquier hosting con HTTPS (Vercel, Netlify, Cloudflare Pages…).
-2. Abre la URL en Safari → botón **Compartir** → **Añadir a pantalla de inicio**.
+La app se publica sola en **GitHub Pages** con cada push a `main`:
+
+👉 https://bymikelangelo.github.io/gimdiet/
+
+1. Abre esa URL en Safari en el iPhone.
+2. Botón **Compartir** → **Añadir a pantalla de inicio**.
 3. La app se abre a pantalla completa, sin barras de Safari, con su icono.
+
+Cómo funciona la publicación: el workflow `.github/workflows/deploy.yml` instala dependencias, compila con `BASE_PATH=/gimdiet/` (porque Pages sirve el repo en esa subcarpeta) y sube la carpeta `dist/` a Pages. Puedes ver cada publicación en la pestaña **Actions** del repo.
+
+> Requisito una sola vez: en el repo, **Settings → Pages → Source: GitHub Actions**.
 
 ## Estructura
 

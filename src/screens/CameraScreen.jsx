@@ -139,7 +139,7 @@ export default function CameraScreen({ dayLabel, kcalLeft, lastPhoto, onCapture 
 
   const useSample = () => {
     stopCamera();
-    onCapture('/sample-plate.svg');
+    onCapture(`${import.meta.env.BASE_URL}sample-plate.svg`);
   };
 
   return (

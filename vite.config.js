@@ -5,7 +5,11 @@ import basicSsl from '@vitejs/plugin-basic-ssl';
 // `npm run dev`        → http://localhost:5173 (la cámara funciona en localhost)
 // `npm run dev:https`  → https://<IP-de-tu-ordenador>:5173 para probar en el iPhone
 //                        por la misma wifi (Safari solo da acceso a la cámara con HTTPS)
+//
+// BASE_PATH: carpeta donde se publica la app. En GitHub Pages es /gimdiet/
+// (lo pone el workflow .github/workflows/deploy.yml). En local es /.
 export default defineConfig(({ mode }) => ({
+  base: process.env.BASE_PATH || '/',
   plugins: [react(), ...(mode === 'https' ? [basicSsl()] : [])],
   server: { host: true },
 }));
