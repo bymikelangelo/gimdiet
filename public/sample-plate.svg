@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200">
+  <defs>
+    <radialGradient id="tbl" cx="50%" cy="45%" r="75%">
+      <stop offset="0" stop-color="#8c6a4c"/><stop offset="1" stop-color="#4a3626"/>
+    </radialGradient>
+    <radialGradient id="plate" cx="45%" cy="40%" r="60%">
+      <stop offset="0" stop-color="#fbf7f0"/><stop offset="1" stop-color="#e3d9c8"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#tbl)"/>
+  <ellipse cx="450" cy="640" rx="400" ry="390" fill="#2e2216" opacity=".35"/>
+  <circle cx="450" cy="600" r="390" fill="url(#plate)"/>
+  <circle cx="450" cy="600" r="300" fill="none" stroke="#d8ccb8" stroke-width="6"/>
+  <!-- arroz -->
+  <g fill="#fffaf0" stroke="#e7dcc6" stroke-width="2">
+    <ellipse cx="560" cy="700" rx="170" ry="130"/>
+  </g>
+  <g fill="#f3ead8">
+    <ellipse cx="520" cy="660" rx="10" ry="5" transform="rotate(20 520 660)"/>
+    <ellipse cx="590" cy="690" rx="10" ry="5" transform="rotate(-30 590 690)"/>
+    <ellipse cx="560" cy="740" rx="10" ry="5" transform="rotate(50 560 740)"/>
+    <ellipse cx="630" cy="730" rx="10" ry="5" transform="rotate(10 630 730)"/>
+    <ellipse cx="480" cy="720" rx="10" ry="5" transform="rotate(-60 480 720)"/>
+  </g>
+  <!-- pollo -->
+  <g>
+    <path d="M250 470 q60-90 190-70 q90 20 80 110 q-10 80-120 90 q-130 10-150-130z" fill="#d9a066"/>
+    <path d="M280 480 q50-60 150-50" stroke="#a8693a" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M290 530 q60-50 170-30" stroke="#a8693a" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M310 580 q60-40 160-20" stroke="#a8693a" stroke-width="10" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- brócoli -->
+  <g>
+    <rect x="300" y="720" width="22" height="70" rx="8" fill="#9fb36f"/>
+    <rect x="370" y="740" width="22" height="70" rx="8" fill="#9fb36f"/>
+    <circle cx="300" cy="715" r="38" fill="#5f7d33"/><circle cx="335" cy="700" r="34" fill="#6d8c3c"/>
+    <circle cx="370" cy="735" r="38" fill="#5f7d33"/><circle cx="400" cy="715" r="30" fill="#6d8c3c"/>
+    <circle cx="330" cy="745" r="30" fill="#55712d"/>
+  </g>
+  <!-- aceite -->
+  <ellipse cx="610" cy="470" rx="70" ry="22" fill="#d8b64a" opacity=".45"/>
+</svg>
